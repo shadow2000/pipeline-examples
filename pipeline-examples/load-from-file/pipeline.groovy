@@ -1,6 +1,7 @@
 node {
+    git url: 'https://github.com/shadow2000/pipeline-examples.git'
     // Load the file 'externalMethod.groovy' from the current directory, into a variable called "externalMethod".
-    def externalMethod = load("externalMethod.groovy")
+    def externalMethod = load("pipeline-examples/load-from-file/externalMethod.groovy")
 
     // Call the method we defined in externalMethod.
     externalMethod.lookAtThis("Steve")
